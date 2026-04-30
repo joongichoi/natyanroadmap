@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>なちゃんの夢実現に向けて | じょーじより</title>
     <link rel="stylesheet" href="./styles.css" />
+    <style>
+      /* 追加セクション用のボタンデザイン */
+      .btn-wrapper {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .detail-btn {
+        display: inline-block;
+        padding: 14px 30px;
+        background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50px;
+        font-weight: bold;
+        box-shadow: 0 4px 15px rgba(255, 154, 158, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .detail-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(255, 154, 158, 0.5);
+      }
+    </style>
   </head>
   <body>
     <div class="mobile-topbar" aria-hidden="true">
@@ -32,6 +54,7 @@
         <ul class="quick-links">
           <li><a href="#canva">ロードマップを見る</a></li>
           <li><a href="#account">アカウント設計</a></li>
+          <li><a href="#strategy2026">2026年最新戦略</a></li> <!-- リンク追加 -->
           <li><a href="#algorithm">新規アカウントの理由</a></li>
           <li><a href="#web-design">WEBデザインを並行する理由</a></li>
         </ul>
@@ -64,6 +87,22 @@
           <li>「Webデザイン勉強中」や「サイト作れます」と一言あるだけで、将来的に企業が「この人にPRを頼めば、綺麗な紹介ページも作ってくれるかも」と思ってくれやすくなるよ。</li>
         </ul>
       </section>
+
+      <!-- ★ここから挿入した新セクション -->
+      <section class="card" id="strategy2026">
+        <h2>【最新】2026年のインスタ戦略</h2>
+        <p class="eyebrow">Advanced Strategy</p>
+        <p>
+          2026年のInstagramは、AIによる画像解析と「送信数（DMシェア）」が鍵！<br>
+          Webデザイナーのスキルを活かした、最新の伸ばし方を別ページに詳しくまとめました。
+        </p>
+        <div class="btn-wrapper">
+          <a href="instagram-growth.html" class="detail-btn">
+            最新の戦略を詳しく見る →
+          </a>
+        </div>
+      </section>
+      <!-- ★ここまで -->
 
       <section class="card" id="algorithm">
         <h2>新規アカウントを作る理由（アルゴリズム）</h2>
@@ -122,6 +161,7 @@
     <nav class="mobile-dock" aria-label="モバイルショートカット">
       <a href="#canva"><span>Visual</span></a>
       <a href="#account"><span>Account</span></a>
+      <a href="#strategy2026"><span>2026</span></a> <!-- ドックにも追加 -->
       <a href="#algorithm"><span>Growth</span></a>
       <a href="#web-design"><span>Design</span></a>
     </nav>
